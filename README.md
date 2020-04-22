@@ -1,9 +1,9 @@
 # HTM- Proyecto-Star-Wars-
 
-=======
+
 Una pagina web donde se podrán realiza consultas respecto a la película Star Wars.
 
-=======
+
 
 
 Presentado por:
@@ -23,7 +23,7 @@ Oscar Antonio Sepúlveda Mora: Cod 1811024301
 =======
 Oscar Guillermo Ortiz Segura: Cod 1821021340
 
-=======
+
 
 
 Desarrollo front end
