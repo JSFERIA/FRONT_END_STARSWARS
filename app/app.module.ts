@@ -4,7 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PersonajesService } from './servicios/personajes.service';//servicio importado//
+import { PlanetasService } from './servicios/planetas.service';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PersonajesService } from './servicios/personajes.service';//servicio im
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [PersonajesService],//importar el servicio//
+  providers: [PlanetasService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
