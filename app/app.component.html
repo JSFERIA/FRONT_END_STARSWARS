@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <meta charset="utf-8">
-   <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/originals/29/17/fa/2917faf816c57fbbeb7f11c2c8c2cc20.png" />
-   <title>Planets</title>
-   <link rel="stylesheet"  href="app.component.css">
+   <head>
+     <meta charset="utf-8">
+     <title>People</title>
+     <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/originals/29/17/fa/2917faf816c57fbbeb7f11c2c8c2cc20.png" />
+     <link rel="stylesheet"  href="app.component.css" >
 
- </head>
+          </head>
 
    <body>
-     
-            
-      <div class="container">
-          <div class="box">
-               <div class="box__header">
-                  <span>planet</span> 
-                    <h1 id="name" class="nam">Planet name</h1>
-               </div>
 
-             <div *ngFor="let Planetas of listaPlanetas" > 
+       <div class="container">
+             <div class="box">
+               <div class="box__header">
+                 <span></span>
+                 <h1 id="name" class="nam">PEOPLE NAME</h1>
+              </div>
+
+     <div *ngFor="let personajes of listapersonajes">
              <div class="box__body">
-                <div class="box__body-infos">
+             <div class="box__body-infos">
                    <ul>
                      <li>
-                       <span>Planeta.name</span>
-                       <p class="num"  id="Dimeter">{{Planetas.name}}</p>
+                        <span>Name</span>
+                        <p class="num"  id="Brith year">{{personajes.name}}</p>
                      </li>
 
                       <li>
-                        <span>Rotation period</span>
-                        <p class="num"  id="Rotation period">{{Planetas.rotation_period}}</p>
-                      </li>
-
-                      <li>
-                        <span>Gravity</span>
-                        <p class="num"  id="Gravity">{{Planetas.gravity}}</p> 
+                         <span>Birth year</span>
+                         <p class="num"  id="Brith year">{{personajes.birth_year}}</p>
                       </li>
 
                        <li>
-                         <span>Population</span>
-                         <p class="num" id="Population">{{Planetas.population}}</p>
+                          <span>Eye color</span>
+                          <p class="num"  id="Eye color">{{personajes.eye_color}}</p>
                        </li>
 
-
                         <li>
-                         <span>Climate</span>
-                         <p class="num" id="Climate">" {{Planetas.climate}} "</p>
-                        </li>
-
-                     </ul>
-                </div>
-
-                    <div class="box__body-infos2">
-                      <ul>
-                        <li>
-                          <span>Diameter</span>
-                          <p class="num"  id="Diameter">{{Planetas.diameter}} Km </p>
+                           <span>Hair color</span>
+                           <p class="num" id="Hair color">{{personajes.hair_color}}</p>
                         </li>
 
                          <li>
-                            <span>Terrain</span>
-                            <p class="num"  id="Terrain">{{Planetas.terrain}}</p>
-                         </li>
-
-                         <li>
-                            <span>Surface water</span>
-                            <p class="num" id="Surface water">{{Planetas.surface_water}} %</p>
-                         </li>
-                                      
-                         <li>
-                            <span>Orbital_period</span>
-                            <p class="num"  id="Residents">{{Planetas.orbital_period}}</p>
+                            <span>Heigt</span>
+                            <p class="num"  id="Heigt">{{personajes.height}}</p>
                          </li>
 
                           <li>
-                             <span>films</span>
-                             <p class="num"  id="films">----------</p>
+                             <span></span>
+                             <p class="num"  id="Mass"></p>
                           </li>
-                                 
-                        </ul>
- 
+                         </ul>
+                    
                      </div>
-              </div>
+
+                          <div class="box__body-infos2">
+                            <ul>
+                              <li>
+                                <span>Skin color</span>
+                                  <p class="num"  id="Skin color">{{personajes.skin_color}}</p>
+                              </li>
+
+                               <li>
+                                  <span>Mass</span>
+                                  <p class="num" id="Homeword">{{personajes.mass}}</p>
+                               </li>
+                                      
+                               <li>
+                                   <span>Gender</span>
+                                   <p class="num"  id="Gender">{{personajes.gender}}</p>
+                               </li>
+
+                               <li>
+                                  <span>Species</span>
+                                  <p class="num"  id="Species">-----</p>
+                               </li>
+
+                               <li>
+                                  <span>Vehicles</span>
+                                  <p class="num" id="Vehicles">-----</p>
+                               </li>
+
+                             </ul>
+                    </div>
+                 </div>
+               </div>
             </div>
- 
-
-                <div class="next">
-                  <button type="button"  id="button"  class="btn"> Next </button>
-                  <script  src="app.js" >  </script>
-
-                </div>
-       </div>
-     </div> 
-    </body>
+                   <div class="next">
+                    <button type="button" id="button" class="btn"> Next </button>
+                  </div>
+               </div>
+      </body>
 
 </html>

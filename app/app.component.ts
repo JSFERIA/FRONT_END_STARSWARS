@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlanetasService } from './servicios/planetas.service';
+import { PersonajesService } from './servicios/personajes.service';
 
 @Component({
   selector: 'app-root',
@@ -7,31 +7,29 @@ import { PlanetasService } from './servicios/planetas.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+ // title = 'Personajes';//
 
- 
-    listaPlanetas:[]; // 2) crear un atributo,3) en la consola escribir ng generate service y poner un nombre cualquiera
-                      // 
- // title = 'MiPimerProyectoAngular';
+    listapersonajes:[];
 
-  constructor (private PlanetasService: PlanetasService ) { //1)crear el  constructor de una clase 
-    this.listaPlanetas =[];
-   // this.listaPlanetas
-  // this.Planetas = this.PlanetasService.getPlanetas() ;
-   this.llenarlistaDePlanetas();
+    constructor (private personajesService: PersonajesService) {
 
- }
+     this.listapersonajes=[];
+     this.llenarlistaDePersonajes ();
 
-   llenarlistaDePlanetas () {
+    }
 
-     this.PlanetasService.traerTodosLosPlanetas ().subscribe (
-     (data) => {
-       console.log("DATA:", data);
-       this.listaPlanetas = data["results"];
+     llenarlistaDePersonajes ( ) {
+
+      this.personajesService.traerTodosLosPersonajes ().subscribe (
+        (data) => {
+          console.log("DATA:", data);
+          this.listapersonajes = data["results"];
+        }
+   
+        );
+                //this.listaPlanetas
+
+
      }
-
-     );
-             
-    
-   }
 
 }

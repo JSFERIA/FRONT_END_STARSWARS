@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'MiPimerProyectoAngular'`, () => {
+  it(`should have as title 'Personajes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('MiPimerProyectoAngular');
+    expect(app.title).toEqual('Personajes');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('MiPimerProyectoAngular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Personajes app is running!');
   });
 });
